@@ -4,8 +4,8 @@
   "description": "this is a multipage website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "compile:sass": "node-sass sass/main.scss css/style.css -w" 
+    },
   "author": "nehashakya",
   "license": "ISC",
   "devDependencies": {
