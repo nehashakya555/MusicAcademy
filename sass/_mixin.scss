@@ -1,4 +1,28 @@
 
 @mixin ma-button{
-	
+	padding: 11px 18px;
+	background: $primary-color;
+	line-height: 20px;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: bold;
+	color: $text-color;
+	border: none;
+	box-shadow: 0px 8px 15px rbba(0,0,0,0.1) ;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	border-radius: 40px;
+	outline: none;
+}
+@mixin btn-hover-effect{
+	background-color: $text-color;
+	box-shadow: 0px 9px 14px rgba(255, 255, 157, 0.4);
+	color: $main-color;
+	transform: translate(-7px);
+}
+@mixin content-center($flex_var){
+	display: flex;
+	justify-content: center;
+	align-items: $flex_var;
+	flex-direction: column;
 }

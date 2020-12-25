@@ -49,7 +49,7 @@ a, a:hover {
 
 .lower-header {
   width: 100%;
-  line-height: 77px;
+  line-height: 70px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) #0a183d; }
   .lower-header .navbar-brand {
     color: #fff;
@@ -63,6 +63,8 @@ a, a:hover {
     transform: rotate(4deg); }
   to {
     transform: rotate(-4deg); } }
+    .lower-header .navbar-brand:hover {
+      filter: drop-shadow(0 15px 10px rgba(255, 255, 255, 0.5)); }
   .lower-header .navbar-nav {
     padding-left: 150px; }
     .lower-header .navbar-nav .nav-item .nav-link {
@@ -75,8 +77,97 @@ a, a:hover {
   .lower-header .nav-item:hover > .nav-link,
   .lower-header .navbar-brand:hover,
   .lower-header .navbar-brand:hover > .fa-headphones-alt {
-    color: red; }
+    color: #b71540; }
+  .lower-header .header-btn {
+    padding: 11px 18px;
+    background: #b71540;
+    line-height: 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 8px 15px rbba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 40px;
+    outline: none; }
+    .lower-header .header-btn:hover {
+      background-color: #fff;
+      box-shadow: 0px 9px 14px rgba(255, 255, 157, 0.4);
+      color: #0a183d;
+      transform: translate(-7px); }
 
 /*******************************************
  			ENDS HEADER CSS
+********************************************/
+/*******************************************
+ 			  BANNER CSS
+********************************************/
+.ma_banner {
+  width: 100%;
+  height: 70vh;
+  background: #0a183d; }
+  .ma_banner__text {
+    height: 50vh;
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; }
+  .ma_banner h2 {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 20px;
+    line-height: 120%;
+    font-weight: 450; }
+    .ma_banner h2 span {
+      color: #b71540;
+      margin-bottom: 40px; }
+  .ma_banner .ma_banner__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; }
+    .ma_banner .ma_banner__btn a {
+      padding: 11px 18px;
+      background: #b71540;
+      line-height: 20px;
+      font-size: 16px;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: #fff;
+      border: none;
+      box-shadow: 0px 8px 15px rbba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      border-radius: 40px;
+      outline: none;
+      text-decoration: none; }
+      .ma_banner .ma_banner__btn a:hover {
+        background-color: #fff;
+        box-shadow: 0px 9px 14px rgba(255, 255, 157, 0.4);
+        color: #0a183d;
+        transform: translate(-7px); }
+    .ma_banner .ma_banner__btn #btn__2 {
+      margin-left: 20px;
+      background-color: rgba(255, 255, 255, 0.5); }
+      .ma_banner .ma_banner__btn #btn__2:hover {
+        background-color: #fff;
+        box-shadow: 0px 9px 14px rgba(255, 255, 157, 0.4);
+        color: #0a183d;
+        transform: translate(-7px); }
+
+/**** image part****/
+#ma_banner__img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.8));
+  animation: anime-hero 10s linear infinite alternative; }
+
+/*******************************************
+ 			  BANNER CSS
 ********************************************/

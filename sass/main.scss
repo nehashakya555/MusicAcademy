@@ -58,7 +58,7 @@ a, a:hover{
 
 .lower-header{
 	width: 100%;
-	line-height: 77px;
+	line-height: 70px;
 	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) $main-color;
 
 	& .navbar-brand{
@@ -76,6 +76,9 @@ a, a:hover{
 			to{
 				transform: rotate(-4deg);
 			}
+		}
+		&:hover{
+			filter: drop-shadow(0 15px 10px rgba(255, 255, 255, 0.5));
 		}
 	}
 
@@ -98,16 +101,89 @@ a, a:hover{
 	& .nav-item:hover > .nav-link,
 	& .navbar-brand:hover,
 	& .navbar-brand:hover > .fa-headphones-alt{
-		color: red;
+		color: $primary-color;
 	}
+	& .header-btn{
+		@include ma-button;
 
-	
+		&:hover{
+        @include btn-hover-effect;		
+		}
+	}	
+
 }
 
+
+/*******************************************
+ 			ENDS HEADER CSS
+********************************************/
+
+/*******************************************
+ 			  BANNER CSS
+********************************************/
+
+.ma_banner{
+	width: 100%;
+	height: 70vh;
+	background: $main-color;
+
+	&__text{
+		height: 50vh;
+		margin-top: 20px;
+		color: $text-color;
+		@include content-center(flex-start);
+	}
+
+	& h2{
+		color: $text-color;
+		font-size: 55px;
+		margin-bottom: 20px;
+		line-height: 120%;
+		font-weight: 450;
+
+		& span{
+			color: $primary-color;
+		margin-bottom: 40px;	
+		}
+	}
+	& .ma_banner__btn{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+
+		& a {
+			@include ma-button;
+			text-decoration: none;
+
+				&:hover{
+					@include btn-hover-effect;
+			}
+		}
+		& #btn__2{
+			margin-left: 20px;
+			background-color: rgba(255, 255, 255, 0.5);
+
+			&:hover{
+				@include btn-hover-effect;
+			}
+		}
+	}
+  }
+
+/**** image part****/
+	#ma_banner__img{
+		@include content-center(flex-end);
+		filter: drop-shadow(0 15px 15px rgba(0,0,0,0.8));
+		animation: anime-hero 10s linear infinite alternative;
+	}
+		anime-hero{
+
+		}
 
 
 
 
 /*******************************************
- 			ENDS HEADER CSS
+ 			  BANNER CSS
 ********************************************/
