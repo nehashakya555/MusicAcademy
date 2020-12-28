@@ -22,8 +22,6 @@ a, a:hover{
 /*******************************************
  			  HEADER CSS
 ********************************************/
-
-
 .upper-header{
 	background-color: #696969;
 	display: flex;
@@ -54,7 +52,6 @@ a, a:hover{
 		display: none;
 	}
 }
-
 
 .lower-header{
 	width: 100%;
@@ -95,8 +92,7 @@ a, a:hover{
 		& .nav-item:last-child > .nav-link{
 			padding-right: 0%;
 		}
-	}
-	
+	}	
 
 	& .nav-item:hover > .nav-link,
 	& .navbar-brand:hover,
@@ -113,7 +109,6 @@ a, a:hover{
 
 }
 
-
 /*******************************************
  			ENDS HEADER CSS
 ********************************************/
@@ -121,7 +116,6 @@ a, a:hover{
 /*******************************************
  			  BANNER CSS
 ********************************************/
-
 .ma_banner{
 	width: 100%;
 	height: 70vh;
@@ -170,20 +164,85 @@ a, a:hover{
 		}
 	}
   }
-
 /**** image part****/
 	#ma_banner__img{
 		@include content-center(flex-end);
-		filter: drop-shadow(0 15px 15px rgba(0,0,0,0.8));
-		animation: anime-hero 10s linear infinite alternative;
-	}
-		anime-hero{
 
+		filter: drop-shadow(0 15px 15px rgba(0,0,0,0.8));
+		animation: anime-hero 8s linear infinite alternate;
+	}
+		@keyframes anime-hero{
+				from{
+				transform: scale(0.9);
+			}
+			to{
+				transform: scale(1);
+			}		
 		}
 
 
+@media (max-width: 980px){
+	html{
+		font-size: 75%;
+	}
+	#ma_banner__img{
+		display: none;
+	}
+	.lower-header{
+		line-height: 50px;
+		text-align: center;
+		padding:0 20px;
+		
+		.navbar .navbar-toggler{
+		border-color: rgba(255, 255, 255, 0.5);	
+	 }
+	
+	& .navbar-nav{
+			padding-left: 30px;
+	   
+	   & .nav-item .nav-link{
+		padding-right: 0%;
+	}
 
-
+	}
+	
+	.ma_banner__text .ma_banner__btn{
+		display: block;
+		margin: 0 auto;		
+	}
+	.ma_banner__text .ma_banner__btn a{
+		text-align: center;
+		display: block;
+	}
+	.ma_banner__text .ma_banner__btn #btn__2{
+		margin-top: 20px;
+		margin-left: 0%;
+	}
+ }	
+}
 /*******************************************
  			  BANNER CSS
 ********************************************/
+/*******************************************
+ 			  ABOUT CSS
+********************************************/
+.about-sec-img{
+	min-width: 100%;
+	min-height: 280px;
+}
+/*******************************************
+ 			 ENDS ABOUT CSS
+********************************************/
+
+.services img{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+
+    &:hover{
+    	opacity:0.5;
+    }
+  
+}
+
+
