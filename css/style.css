@@ -166,7 +166,7 @@ a, a:hover {
   align-items: flex-end;
   flex-direction: column;
   filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.8));
-  animation: anime-hero 8s linear infinite alternate; }
+  animation: anime-hero 3s linear infinite alternate; }
 
 @keyframes anime-hero {
   from {
@@ -200,7 +200,7 @@ a, a:hover {
       margin-left: 0%; } }
 
 /*******************************************
- 			  BANNER CSS
+ 			ENDS  BANNER CSS
 ********************************************/
 /*******************************************
  			  ABOUT CSS
@@ -210,7 +210,7 @@ a, a:hover {
   min-height: 280px; }
 
 /*******************************************
- 			 ENDS ABOUT CSS
+ 			 SERVIVES CSS
 ********************************************/
 .services img {
   width: 100%;
@@ -218,3 +218,49 @@ a, a:hover {
   object-fit: cover; }
   .services img:hover {
     opacity: 0.5; }
+
+/*******************************************
+ 			ENDS SERVIVES CSS
+********************************************/
+/*******************************************
+ 			 GALLERY CSS
+********************************************/
+#carouselExampleFade {
+  max-width: 70%;
+  margin: auto; }
+
+/*******************************************
+ 			ENDS GALLERY CSS
+********************************************/
+/*******************************************
+ 			TEAM CSS
+********************************************/
+.team-page {
+  background-color: #eeeeee; }
+  .team-page .team {
+    text-align: center;
+    margin: 20px; }
+  .team-page .team p {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .team-page img {
+    border-radius: 50%; }
+
+/*******************************************
+ 			ENDS TEAM CSS
+********************************************/
+/*******************************************
+ 			CONTACT CSS
+********************************************/
+.cmap-wrap {
+  display: flex;
+  justify-content: space-around; }
+
+@media (max-width: 780px) {
+  .cmap-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  p {
+    text-align: center; } }

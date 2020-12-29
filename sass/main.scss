@@ -18,7 +18,6 @@ body{
 a, a:hover{
 	text-decoration: none;
 }
-
 /*******************************************
  			  HEADER CSS
 ********************************************/
@@ -52,7 +51,6 @@ a, a:hover{
 		display: none;
 	}
 }
-
 .lower-header{
 	width: 100%;
 	line-height: 70px;
@@ -106,13 +104,10 @@ a, a:hover{
         @include btn-hover-effect;		
 		}
 	}	
-
 }
-
 /*******************************************
  			ENDS HEADER CSS
 ********************************************/
-
 /*******************************************
  			  BANNER CSS
 ********************************************/
@@ -169,7 +164,7 @@ a, a:hover{
 		@include content-center(flex-end);
 
 		filter: drop-shadow(0 15px 15px rgba(0,0,0,0.8));
-		animation: anime-hero 8s linear infinite alternate;
+		animation: anime-hero 3s linear infinite alternate;
 	}
 		@keyframes anime-hero{
 				from{
@@ -179,7 +174,6 @@ a, a:hover{
 				transform: scale(1);
 			}		
 		}
-
 
 @media (max-width: 980px){
 	html{
@@ -221,7 +215,7 @@ a, a:hover{
  }	
 }
 /*******************************************
- 			  BANNER CSS
+ 			ENDS  BANNER CSS
 ********************************************/
 /*******************************************
  			  ABOUT CSS
@@ -231,9 +225,8 @@ a, a:hover{
 	min-height: 280px;
 }
 /*******************************************
- 			 ENDS ABOUT CSS
+ 			 SERVIVES CSS
 ********************************************/
-
 .services img{
     width: 100%;
     height: 15vw;
@@ -241,8 +234,64 @@ a, a:hover{
 
     &:hover{
     	opacity:0.5;
-    }
-  
+    } 
+}
+/*******************************************
+ 			ENDS SERVIVES CSS
+********************************************/
+/*******************************************
+ 			 GALLERY CSS
+********************************************/
+#carouselExampleFade{
+	max-width: 70%;
+	margin:auto;
+}
+/*******************************************
+ 			ENDS GALLERY CSS
+********************************************/
+
+/*******************************************
+ 			TEAM CSS
+********************************************/
+.team-page{
+	background-color: #eeeeee;
+	& .team{
+	text-align: center;
+	margin:20px;
+}
+    & .team  p{
+	margin-left: 10px;
+    margin-right: 10px;
+	}
+	
+	& img{
+		border-radius: 50%;
+	}
+}
+/*******************************************
+ 			ENDS TEAM CSS
+********************************************/
+/*******************************************
+ 			CONTACT CSS
+********************************************/
+
+
+.cmap-wrap{
+	display: flex;
+    justify-content:  space-around;
 }
 
+@media (max-width: 780px){
 
+.cmap-wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+ }
+
+ & p{
+ 	text-align: center;
+ }
+
+}
