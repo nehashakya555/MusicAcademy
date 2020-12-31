@@ -3,6 +3,7 @@
 <head>
 	<title>Music Academy</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="shortcut icon" type="images/ico" href="../images/icon.ico">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -10,7 +11,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
 
 </head>
 <body>
@@ -68,11 +68,8 @@
 		</nav>
 	</div>		
    </header>
-
-
-
-   <!----form------>
-
+<!------------ENDS HEADER----------->
+<!----FORM------>
    <div class="signWrap">
 <h2>Sign in/up Form</h2>
 <div class="container" id="container">
@@ -114,7 +111,7 @@
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Welcome Back</h1>
+				<h1>Welcome</h1>
 				<p>Enter your personal details </p>
 				<button class="ghost" id="signUp">Sign Up</button>
 			</div>
@@ -122,21 +119,27 @@
 	</div>
 </div>
 </div>
-
-
+<!-------------ENDS FORM------->
+<!-------------FOOTER------->
+<footer class="footer mt-3">
+	<p>&copy; MUSIC ACADEMY <script>document.write(new Date().getFullYear());</script>
+</footer>
+<!-------------ENDS FOOTER------->
+<!------------JAVASCRIPT------->
 <script>
-	
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const container = document.getElementById('container');
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
+		signUpButton.addEventListener('click', () => {
+			container.classList.add("right-panel-active");
+		});
 
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
+		signInButton.addEventListener('click', () => {
+			container.classList.remove("right-panel-active");
+		});
 </script>
+
+
 </body>
 </html>

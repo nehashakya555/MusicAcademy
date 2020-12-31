@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<title>Music Academy</title>
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+ 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+ 	<link rel="shortcut icon" type="images/ico" href="images/icon.ico">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,15 +12,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
 </head>
 <body>
 <!------------ HEADER----------->
@@ -49,7 +40,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		        <li class="nav-item">
-		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="assets/about.html">About</a>
@@ -70,7 +61,9 @@
 		        
 		      </ul>
 		      <form class="d-flex">
-		        <button class="header-btn" type="submit">SignIn</button>
+		      	<a href="./assets/signin.html">
+		        <button type="button" class="header-btn" type="submit">SignIn</button>
+		        </a>
 		      </form>
 		    </div>
 		  </div>
@@ -79,7 +72,6 @@
    </header>
 <!--------------ENDS HEADER--------->  
 <!-----------BANNER-------------->
-
  		<div class="ma_banner">
  			<div class="container">
  				<div class="row">
@@ -88,8 +80,8 @@
 	 						<h2><span>MUSIC</span> for everyone.</h2>
 	 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae minus enim, et ad veniam, deleniti praesentium aut, autem animi quia corrupti quam! Nemo molestias asperiores quibusdam amet praesentium at, nam.</p>
 	 							<div class="ma_banner__btn">
-	 								<a href="#" alt="">Download Now</a>
-	 								<a href="#" id="btn__2" alt="">Start 7 Days Free Trial</a>
+	 							<a href="./assets/signin.html" alt="">Download Now</a>
+	 							<a href="./assets/signin.html" id="btn__2" alt="">Start 7 Days Free Trial</a>
 	 							</div>
  						</div>
  					</div>
@@ -134,7 +126,7 @@
 			<h2 class="display-4">Our Services</h2>
 			<hr class="w-25 mx-auto">
 		</div>
-			<div class="container services" data-aos="zoom-in-right">
+			<div class="container services" data-aos="flip-left">
 				<div class="row my-5 ">
 					<div class="col-md-4 col-10 col-xxl-4 mx-auto ml mb-2">
 						<div class="card" style="width: 18rem;">
@@ -192,8 +184,8 @@
 			</div>	
 		</div>
 	</section>
+<!------------ENDS SERVICES SECTION--------->
 <!--------------GALLERY--------->
-
 <section class="gallery-page my-4 ">
 		<div class="text-center">
 			<h2 class="display-4">GALLERY</h2>
@@ -221,7 +213,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </a>
-</div>		
+  </div>		
 		<div class="gallery-btn text-center mt-4">
 			<a href="./assets/gallery.html">
 		  <button type="button" class="btn btn-outline-info my-2 "  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Check More</button>
@@ -278,10 +270,10 @@
             </div>
             <div class="gallery-btn text-center">
             	<a href="./assets/team.html">
-  <button type="button" class="btn btn-outline-info my-1"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Check More</button>
-</a>
-</div>
-        </div>
+  			<button type="button" class="btn btn-outline-info my-1"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Check More</button>
+			</a>
+		</div>
+       </div>
 </section>
 <!-------------ENDS OUR TEAM--------->
 <!-------------CONTACT-------->
@@ -291,18 +283,16 @@
 			<hr class="w-25 mx-auto">
 		</div>	
 
-<!----FORM---->
-
-
+<!--FORM-->
 
 <div class="container">
 	<div id="contact-form">
 	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScEPLgkngcSWvONqchiX_JuLDhxk4oiXM9btSLZfU7wRNHB6Q/viewform?embedded=true" width="100%" scrolling="no" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+	</div>
 </div>
 
-</div>
-
-<!----FORM---->
+<!--ENDS FORM-->
+<!--LOCATION-->
 <div class="container">
 <div class=" cmap-wrap">
 	<div class="location-text">
@@ -321,9 +311,7 @@
 	</div>
 	</div>
 </div>
-<!----FORM---->
-
-		
+	
 	</div>
 	<div class="container">
 	<div class="contact-map">
@@ -333,64 +321,27 @@
 </div>
 
  <div class="service-btn text-center">
- 	<a href="./assets/contact.html">
-				 <button type="button" class="btn btn-outline-info"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Check More</button>
-				</a>
-					</div>
+ 		<a href="./assets/contact.html">
+		 <button type="button" class="btn btn-outline-info"  data-bs-toggle="tooltip" data-bs-placement="right" title="Click Here">Check More</button>
+		</a>
+</div>
+<!--ENDS LOCATION-->
 </div>
 </div>
-
 </section>
-
 <!-------------ENDS CONTACT-------->
 <!-------------FOOTER------->
-
 <footer class="footer mt-3">
 	<p>&copy; MUSIC ACADEMY <script>document.write(new Date().getFullYear());</script>
 </footer>
+<!-------------ENDS FOOTER------->
 
+<!-------------JAVASCRIPT CDN------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-------------ENDS CONTACT-------->
-
-
-
-
-
-
-
-
-
-
- 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-
-
 
 <!------AOS-animate----->
 
@@ -399,7 +350,5 @@
     AOS.init();
   </script>
 
-
-    
 </body>
 </html>
